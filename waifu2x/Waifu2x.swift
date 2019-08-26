@@ -69,7 +69,7 @@ public struct Waifu2x {
         var out_block_size: Int
         var out_scale: Int
         switch model {
-        case .anime_noise0, .anime_noise1, .anime_noise2, .anime_noise3, .photo_noise0, .photo_noise1, .photo_noise2, .photo_noise3:
+        case .anime_noise0?, .anime_noise1?, .anime_noise2?, .anime_noise3?, .photo_noise0?, .photo_noise1?, .photo_noise2?, .photo_noise3?:
             Waifu2x.block_size = 128
             out_width = width
             out_height = height
